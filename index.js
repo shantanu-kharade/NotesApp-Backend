@@ -9,10 +9,7 @@ const port = process.env.port || 3000
 
 connectDB()
 
- app.use(cors({
-      origin: ' http://localhost:5173' 
-    }));
-
+app.use(cors());
 app.use(express.json())
 app.use('/Notes', Notes)
 
