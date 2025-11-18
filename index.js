@@ -9,7 +9,10 @@ const port = process.env.port
 
 connectDB()
 
+//cors
 app.use(cors());
+
+
 app.use(express.json())
 app.use('/Notes', Notes)
 
